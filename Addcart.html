@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Example of Twitter Bootstrap 3 Responsive Navbar</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<link rel="stylesheet" href="css\stylesheet.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<style type="text/css">
+	.navbar{
+		margin-top: 20px;
+	}
+</style>
+</head> 
+<body>
+<div class="container">
+    <nav role="navigation" class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+         <!--  <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle"> 
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <a href="#" class="navbar-brand">Add Cart</a>
+        </div>
+    </nav>
+    <div data-role="main" class="ui-content">
+    <form method="post" action="demoform.asp">
+      <label for="points">20 Litre</label>
+      <input type="range" name="points" id="points" value="0" min="0" max="10" data-popup-enabled="true">
+      <label for="points">2 Litre(in Carat)</label>
+      <input type="range" name="points" id="points" value="0" min="0" max="10" data-popup-enabled="true">
+      <label for="points">1 Litre(in Carat)</label>
+      <input type="range" name="points" id="points" value="0" min="0" max="10" data-popup-enabled="true">
+      <button type="submit" data-inline="true" onclick="orderconfirm()">Order Now!!!</button>
+    </form>
+   <!-- </div>
+    <div class="round-button"><div class="round-button-circle"><a href="http://example.com" class="round-button">OK</a>
+    </div></div> -->
+</div>
+
+<script>
+function orderconfirm() {
+    alert("Your Order Submitted Successfully");
+}
+</script>
+</body>
+</html>                                		
